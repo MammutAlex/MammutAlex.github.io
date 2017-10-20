@@ -1,18 +1,16 @@
 /* Import Fonts */
 @import url(//fonts.googleapis.com/css?family=Coustard|Open+Sans);
-
+html {
+    height: 100%;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    background: #777 url("../../images/backgrounds/gradient.png") center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to top right, #45145A, #FF5300) no-repeat fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,11 +32,11 @@ h5 {
     line-height: 35px;
     padding: 0;
     margin: 0;
-    color: #b7b7b7;
+    color: #fff;
 }
 
 a, p {
-    color: #b7b7b7;
+    color: #fff;
     text-decoration: none;
     font-weight: normal;
 }
