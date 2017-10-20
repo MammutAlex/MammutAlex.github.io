@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'/>
+    <title>Alex Kovalchuk</title>
+    <meta name="p:domain_verify" content="569d0eb51a59484383aa25172c9bf1a6"/>
+
+    <link rel="stylesheet" href="dist/css/all.css" type="text/css" media="screen" charset="utf-8"/>
+
+</head>
+<body>
+<div id="app">
+    <!-- Social Links -->
+    <nav class="social-nav">
+        <ul>
+            <li><a href="https://www.facebook.com/sania.kovalchuk"><img src="images/icon-facebook.png"/></a></li>
+            <li><a href="https://twitter.com/AlexMammut"><img src="images/icon-twitter.png"/></a></li>
+            <li><a href="https://github.com/MammutAlex"><img src="images/icon-github.png"/></a></li>
+            <li><a href="https://www.linkedin.com/in/alex-mammut"><img src="images/icon-linkedin.png"/></a></li>
+            <li><a href="https://ru.pinterest.com/saniaboy2"><img src="images/icon-pinterest.png"/></a></li>
+        </ul>
+    </nav>
+
+    <!-- Site Logo -->
+    <div id="logo">mammut</div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <router-link to="/" exact>Home</router-link>
+            </li>
+            <li>
+                <router-link to="/about">About</router-link>
+            </li>
+            <li>
+                <router-link to="/contact">Contact</router-link>
+            </li>
+        </ul>
+    </nav>
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+    </transition>
+</div>
+
+<script src="dist/js/app.js"></script>
+</body>
+</html>
