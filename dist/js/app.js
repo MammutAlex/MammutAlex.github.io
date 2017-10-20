@@ -13963,6 +13963,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -13974,26 +13976,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("section", { staticClass: "content" }, [
+    _c("h1", [_vm._v("Welcome")]),
+    _vm._v(" "),
+    _c("h2", [_vm._v("I'm Alex Kovalchuk!")]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "p",
+      [_c("router-link", { attrs: { to: "/about" } }, [_vm._v("More info »")])],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "content" }, [
-      _c("h1", [_vm._v("Welcome")]),
-      _vm._v(" "),
-      _c("h2", [_vm._v("I Alex Kovalchuk!")]),
-      _vm._v(" "),
-      _c("h3", [
-        _vm._v("CTO – "),
-        _c("a", { attrs: { href: "https://cargofy.com/" } }, [
-          _vm._v("Cargofy")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("p", [_c("a", { attrs: { href: "/about" } }, [_vm._v("More info »")])])
+    return _c("h3", [
+      _vm._v("CTO – "),
+      _c("a", { attrs: { href: "https://cargofy.com/" } }, [_vm._v("Cargofy")])
     ])
   }
 ]
