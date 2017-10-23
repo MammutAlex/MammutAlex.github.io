@@ -70,6 +70,7 @@ a:hover {
     top: 200px;
     width: 600px;
     z-index: 9999;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
