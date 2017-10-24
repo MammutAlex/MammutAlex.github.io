@@ -4,7 +4,7 @@
         <h2>I'm Alex Kovalchuk!</h2>
         <h3>CTO – <a href="https://cargofy.com/">Cargofy</a></h3>
         <p>
-            <router-link to="/about">More info &#187;</router-link>
+            <router-link to="/contact">More info &#187;</router-link>
         </p>
     </section>
 </template>

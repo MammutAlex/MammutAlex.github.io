@@ -13,6 +13,5 @@ let mix = require('laravel-mix');
 
 mix.js('build/js/web.js', 'dist/js/app.js')
     .styles([
-        'node_modules/bulma/css/bulma.css',
         'build/css/styles.css',
     ], 'dist/css/all.css');
