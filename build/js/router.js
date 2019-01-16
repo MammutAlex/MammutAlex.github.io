@@ -1,23 +1,10 @@
+import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-const routes = [
-    {
-        path: '/',
-        name: 'home',
-        component: require('./views/Index'),
-    },
-    {
-        path: '/about',
-        name: 'about',
-        component: require('./views/About'),
-    },
-    {
-        path: '/contact',
-        name: 'contact',
-        component: require('./views/Contact'),
-    },
-];
-export default new VueRouter({
-    mode: 'history',
-    routes
-});
+import Index from "./views/Index";
+import About from "./views/About";
+import Contact from "./views/Contact";
+
+Vue.use(VueRouter);
+
+export default ;
