@@ -1,8 +1,10 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css?family=Coustard|Open+Sans');
+
 html {
     height: 100%;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -74,23 +76,33 @@ a:hover {
     -webkit-font-smoothing: antialiased;
 }
 
+.footer {
+    position: absolute;
+    bottom: 23px;
+}
+
 #logo {
     font-family: 'Coustard', serif;
-    font-size: 40px;
+    font-size: 80px;
     bottom: 40px;
     height: auto;
     left: 40px;
-    position: absolute;
-    width: 20%;
     z-index: 1000;
+    color: #fff;
+    border-left: none;
+}
+
+#logo>a {
     color: #fff;
 }
 
+#logo>a:hover {
+    text-decoration: none;
+}
+
 .main-nav {
-    position: absolute;
-    bottom: 23px;
-    left: 210px;
-    z-index: 1001;
+    font-family: 'Coustard', serif;
+    font-size: 40px;
 }
 
 .main-nav ul li {
@@ -141,4 +153,8 @@ a:hover {
 
 #arrow_left {
     right: 95px;
+}
+
+.fa {
+    font-size: 48px
 }

@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('build/js/web.js', 'dist/js/app.js')
+mix.js('build/js/app.js', 'dist/js/app.js')
     .styles([
         'build/css/styles.css',
     ], 'dist/css/all.css');
