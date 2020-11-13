@@ -28,10 +28,9 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // Doc: https://github.com/nuxt-community/color-mode-module
     "@nuxtjs/color-mode",
-    // Doc: https://github.com/nuxt-community/tailwindcss-module
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    '@nuxt/content'
   ],
   tailwindcss: {
     // add '~tailwind.config` alias
