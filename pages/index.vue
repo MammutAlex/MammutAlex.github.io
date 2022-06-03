@@ -31,7 +31,7 @@
             Worked at the Space Research Institute, now engaged in product development at the edge of IT and
             Logistics. Has 7 years of experience in creating high-tech solutions. Cargofy products used by more than
             5,000 truckers from 2 countries around the world<br>
-            My hobby is speleology and computer games
+            My hobby is speleology and climbing
           </p>
 
           <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
