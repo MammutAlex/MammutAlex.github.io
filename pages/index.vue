@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover background">
+  <div class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
     <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
       <!--Main Col-->
@@ -80,21 +80,17 @@ export default {
 };
 </script>
 
-<style scoped>
-.background {
-  background-image: url('../static/images/background.png')
+<style>
+body {
+  min-height: 100%;
+  background: url('../static/images/background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .profile {
   background-image: url('../static/images/photo.jpeg')
-}
-.badge {
-  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700;
-&:hover {
-   @apply bg-gray-300;
- }
-}
-.dark-mode .badge {
-  @apply bg-gray-700 text-gray-200;
 }
 </style>
