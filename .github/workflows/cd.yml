@@ -25,19 +25,6 @@ jobs:
         with:
           node-version: "16"
           cache: npm
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        with:
-          static_site_generator: nuxt
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('.output/public') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: npm ci
       - name: Static HTML export with Nuxt
@@ -45,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./.output/public
+          path: ./dist
 
   deploy:
     environment:
