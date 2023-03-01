@@ -9,5 +9,5 @@ export default defineNuxtConfig({
         'nuxt-headlessui',
         '@nuxt/image-edge',
     ],
-    ssr: false
+    ssr: true
 })
