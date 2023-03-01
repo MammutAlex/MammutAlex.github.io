@@ -1,8 +1,8 @@
 <template>
-  <div class="relative bg-white">
+  <div class="relative bg-white dark:bg-slate-800">
     <div class="mx-auto max-w-7xl">
       <div class="relative z-10 lg:w-full lg:max-w-2xl">
-        <svg class="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <svg class="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white dark:fill-slate-800 lg:block" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polygon points="0,0 90,0 50,100 0,100" />
         </svg>
 
@@ -13,19 +13,19 @@
               <Bars3Icon class="h-6 w-6" aria-hidden="true" />
             </button>
             <div class="hidden lg:ml-12 lg:block lg:space-x-14">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-900">{{ item.name }}</a>
+              <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:text-gray-400 hover:dark:text-slate-300">{{ item.name }}</a>
             </div>
           </nav>
           <Dialog as="div" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
-            <DialogPanel class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+            <DialogPanel class="fixed inset-0 z-10 overflow-y-auto bg-white dark:bg-slate-800 px-6 py-6 lg:hidden">
               <div class="flex flex-row-reverse items-center justify-between">
-                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-slate-400" @click="mobileMenuOpen = false">
                   <span class="sr-only">Close menu</span>
                   <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
               <div class="mt-6 space-y-2">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">{{ item.name }}</a>
+                <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-400/10 hover:text-gray-400 hover:dark:text-slate-300">{{ item.name }}</a>
               </div>
             </DialogPanel>
           </Dialog>
