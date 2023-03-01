@@ -137,6 +137,18 @@ declare module 'nuxt/schema' {
          stripQueryParameters: boolean,
       },
    },
+
+   ipx: {
+      dir: string,
+
+      maxAge: any,
+
+      domains: Array<any>,
+
+      sharp: any,
+
+      alias: any,
+   },
   }
   interface PublicRuntimeConfig {
    content: {
@@ -144,7 +156,7 @@ declare module 'nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: any,
+      integrity: number,
 
       experimental: {
          stripQueryParameters: boolean,
