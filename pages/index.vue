@@ -54,8 +54,35 @@ const navigation = [
   { name: 'Youtube', href: 'https://www.youtube.com/@alex-kovalchuk' },
   { name: 'Contact', href: 'mailto:alex@cargofy.com' },
   { name: 'GitHub', href: 'https://github.com/MammutAlex' },
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/alex-kovalchuk/' },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/alex-kovalchuk' },
 ]
 
 const mobileMenuOpen = ref(false)
+
+useSchemaOrg([
+  definePerson({
+    name: 'Alex Kovalchuk',
+    givenName: 'Alex',
+    familyName: 'Kovalchuk',
+    email: 'alex@cargofy.com',
+    sameAs: [
+      {
+        "roleName": "My website",
+        "sameAs": "https://alex-kovalchuk.pro"
+      },
+      {
+        "roleName": "My Youtube chanel",
+        "sameAs": "https://www.youtube.com/@alex-kovalchuk"
+      },
+      {
+        "roleName": "My Github",
+        "sameAs": "https://github.com/MammutAlex"
+      },
+      {
+        "roleName": "My Linkedin",
+        "sameAs": "https://www.linkedin.com/in/alex-kovalchuk"
+      },
+    ]
+  })
+])
 </script>

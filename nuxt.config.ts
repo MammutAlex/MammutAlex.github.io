@@ -8,6 +8,15 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         'nuxt-headlessui',
         '@nuxt/image-edge',
+        'nuxt-schema-org',
     ],
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://alex-kovalchuk.pro',
+        }
+    },
+    schemaOrg: {
+        host: 'https://alex-kovalchuk.pro',
+    },
     ssr: true
 })
